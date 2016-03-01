@@ -51,26 +51,6 @@ public class MyActivity extends AppCompatActivity {
         users.add(user);
 
         mgr.add(users);
-        /*System.out.println("get in signUpUser function");
-        //open or create myFirstDB database
-        SQLiteDatabase db = openOrCreateDatabase("myFirstDB.db", Context.MODE_PRIVATE,null);
-        db.execSQL("DROP TABLE EXISTS user");
-
-        //create user table
-        db.execSQL("CREATE TABLE user (_id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, pwd VARCHAR)");
-        User user = new User();
-
-        EditText accountEditText = (EditText) findViewById(R.id.accountEdittext);
-        EditText passwordText = (EditText)findViewById(R.id.pwdEdittext);
-        user.account = accountEditText.getText().toString();
-        user.password = passwordText.getText().toString();
-
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(user.account);
-        System.out.println(user.password);
-        //insert into data
-        db.execSQL("INSERT INTO user VALUES (NULL, ?, ?)", new Object[]{user.account, user.password});
-        db.close();*/
 
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         startActivity(intent);
