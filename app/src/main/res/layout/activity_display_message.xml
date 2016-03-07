@@ -15,7 +15,7 @@
             android:layout_marginLeft="50dip"
             android:text="@string/sign_in_title"
             android:textColor="#2B2B2B"
-            android:textSize="14px"/>
+            android:textSize="20sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
             android:layout_marginLeft="50dip"
             android:layout_marginTop="15dip"
             android:textColor="#CC011F"
-            android:textSize="12px"/>
+            android:textSize="12sp"/>
 
     </LinearLayout>
 

@@ -23,7 +23,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
     }
 
     public void loginIn(View view){
-        ArrayList list = new ArrayList();
+        /*ArrayList list = new ArrayList();
 
         EditText accountEditText = (EditText) findViewById(R.id.accountEdittext);
         String accountText = accountEditText.getText().toString();
@@ -39,7 +39,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 map.put("password", user.password );
                 list1.add(map);
             }
-        }
+        }*/
         //list.add(list1);
         Intent intent = new Intent(this, WelcomeActivity.class);
        // Bundle bundle = new Bundle();
