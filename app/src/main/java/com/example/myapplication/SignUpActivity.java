@@ -1,25 +1,19 @@
 package com.example.myapplication;
 
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.CursorWrapper;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.SupportActionModeWrapper;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.SimpleCursorAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MyActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
     /*public final static String EXTRA_MESSAGE = "com.example.myapplication.MESSAGE";*/
 
     private DBManager mgr;
@@ -28,7 +22,7 @@ public class MyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_sign_up);
         listView = (ListView) findViewById(R.id.listView);
         mgr = new DBManager(this);
 
@@ -52,7 +46,7 @@ public class MyActivity extends AppCompatActivity {
 
         mgr.add(users);
 
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        Intent intent = new Intent(this, SignInActivity.class);
         startActivity(intent);
     }
 
@@ -72,7 +66,7 @@ public class MyActivity extends AppCompatActivity {
 
 
     public void checkSignUp(View view){
-        Intent intent = new Intent(this,DisplayMessageActivity.class);
+        Intent intent = new Intent(this,SignInActivity.class);
         startActivity(intent);
     }
 }
